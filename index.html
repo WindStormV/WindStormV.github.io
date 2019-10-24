@@ -61,6 +61,42 @@
       <div class="outer">
         <section id="main">
   
+    <article id="post-test" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2019/10/24/test/" class="article-date">
+  <time datetime="2019-10-24T14:15:43.000Z" itemprop="datePublished">2019-10-24</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2019/10/24/test/">test</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://yoursite.com/2019/10/24/test/" data-id="ck24slsba0002e0uhexq49pyc" class="article-share-link">Share</a>
+      
+      
+    </footer>
+  </div>
+  
+</article>
+
+
+  
     <article id="post-博客搭建" class="article article-type-post" itemscope itemprop="blogPost">
   <div class="article-meta">
     <a href="/2019/10/24/%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA/" class="article-date">
@@ -87,9 +123,9 @@
 <p>对其进行了简化和优化</p>
 <h2 id="安装git"><a href="#安装git" class="headerlink" title="安装git"></a>安装git</h2><p>到git官网上下载,<a href="https://gitforwindows.org/" target="_blank" rel="noopener">Download git</a>,下载后会有一个Git Bash的命令行工具，以后就用这个工具来使用git，连接git和github参考<a href="http://fangzh.top/2018/2018090514/" target="_blank" rel="noopener">http://fangzh.top/2018/2018090514/</a> ，配置过git和github的可以跳过这个步骤</p>
 <h2 id="安装nodejs"><a href="#安装nodejs" class="headerlink" title="安装nodejs"></a>安装nodejs</h2><p><a href="https://nodejs.org/en/download/" target="_blank" rel="noopener">nodejs</a>选择LTS版本就行了</p>
-<p><img src="..%5Cimg%5C1571900180720.png" alt="1571900180720"></p>
+<p><img src="%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA%5C1571900180720.png" alt="1571900180720"></p>
 <p>打开git bash，可以直接在电脑的搜索框输入git bash，启动就可以了，这个时候你所在的文件夹位置为用户文件夹；或者右击一个文件夹，点击git bash，这时候你的文件夹位置就是你打开的这个文件夹。</p>
-<p><img src="..%5Cimg%5C1571902265215.png" alt="1571902265215"></p>
+<p><img src="%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA%5C1571902265215.png" alt="1571902265215"></p>
 <p>输入</p>
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">node -v</span><br><span class="line">npm -v</span><br></pre></td></tr></table></figure>
 
@@ -121,17 +157,17 @@
 <p>接下来输入</p>
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo s</span><br></pre></td></tr></table></figure>
 <p>打开hexo服务，出现下图内容</p>
-<p><img src="..%5Cimg%5C1571902875727.png" alt="1571902875727"></p>
+<p><img src="%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA%5C1571902875727.png" alt="1571902875727"></p>
 <p>这时候在浏览器的输入框输入</p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">localhost:4000</span><br></pre></td></tr></table></figure>
 
 <p>出现以下界面</p>
-<p><img src="..%5Cimg%5C1571902947660.png" alt="1571902947660"></p>
+<p><img src="%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA%5C1571902947660.png" alt="1571902947660"></p>
 <p>至此，博客在本机已经搭建好，接下来需要将博客部署到github上，让别人也可以访问你的博客</p>
 <h2 id="新建一个github仓库"><a href="#新建一个github仓库" class="headerlink" title="新建一个github仓库"></a>新建一个github仓库</h2><p>没有github账号的注册一个，注册完登录后，在GitHub.com中看到一个New repository，博客部署的仓库名必须是以下格式</p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">github用户名.github.io</span><br></pre></td></tr></table></figure>
 
-<p><img src="..%5Cimg%5C1571904180505.png" alt="1571904180505"></p>
+<p><img src="%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA%5C1571904180505.png" alt="1571904180505"></p>
 <p>输入完成后，点击create</p>
 <h2 id="安装部署插件"><a href="#安装部署插件" class="headerlink" title="安装部署插件"></a>安装部署插件</h2><p>在blog文件夹下，在git bash中输入</p>
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">cnpm install hexo-deployer-git --save</span><br></pre></td></tr></table></figure>
@@ -148,11 +184,13 @@
 <p>接下来</p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">hexo clean//清除之前的public，即上传到github上的文件</span><br><span class="line">hexo generate//根据当前source创建新的public</span><br><span class="line">hexo deploy//部署public至github</span><br></pre></td></tr></table></figure>
 <h2 id="如何备份，或者移植电脑中的博客库"><a href="#如何备份，或者移植电脑中的博客库" class="headerlink" title="如何备份，或者移植电脑中的博客库"></a>如何备份，或者移植电脑中的博客库</h2><p><a href="https://blog.csdn.net/xr469786706/article/details/78402492" target="_blank" rel="noopener">https://blog.csdn.net/xr469786706/article/details/78402492</a></p>
+<h2 id="给博客插入图片"><a href="#给博客插入图片" class="headerlink" title="给博客插入图片"></a>给博客插入图片</h2><p><a href="https://blog.csdn.net/qq_40265501/article/details/80019774" target="_blank" rel="noopener">https://blog.csdn.net/qq_40265501/article/details/80019774</a></p>
+<p>这里的npm改为 cnpm指令</p>
 
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/2019/10/24/%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA/" data-id="ck24s780i00018kuhdde45cwl" class="article-share-link">Share</a>
+      <a data-url="http://yoursite.com/2019/10/24/%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA/" data-id="ck24slsb60001e0uh1i533v07" class="article-share-link">Share</a>
       
       
     </footer>
@@ -201,7 +239,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/2019/10/24/hello-world/" data-id="ck24s780a00008kuh6zxbf86x" class="article-share-link">Share</a>
+      <a data-url="http://yoursite.com/2019/10/24/hello-world/" data-id="ck24slsb00000e0uh5i0x6qsn" class="article-share-link">Share</a>
       
       
     </footer>
@@ -240,6 +278,10 @@
     <h3 class="widget-title">Recent Posts</h3>
     <div class="widget">
       <ul>
+        
+          <li>
+            <a href="/2019/10/24/test/">test</a>
+          </li>
         
           <li>
             <a href="/2019/10/24/%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA/">博客搭建</a>
