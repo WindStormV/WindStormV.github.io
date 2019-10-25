@@ -85,80 +85,15 @@
       
         <h1 id="博客搭建：hexo-github搭建博客（windows）"><a href="#博客搭建：hexo-github搭建博客（windows）" class="headerlink" title="博客搭建：hexo+github搭建博客（windows）"></a>博客搭建：hexo+github搭建博客（windows）</h1><p>整个安装过程参考了：<a href="http://fangzh.top/2018/2018090514/" target="_blank" rel="noopener">http://fangzh.top/2018/2018090514/</a></p>
 <p>对其进行了简化和优化，主要是用cnpm替换了npm（npm下载太慢，可能安装失败）</p>
-<h2 id="安装git"><a href="#安装git" class="headerlink" title="安装git"></a>安装git</h2><p>到git官网上下载,<a href="https://gitforwindows.org/" target="_blank" rel="noopener">Download git</a>,下载后会有一个Git Bash的命令行工具，以后就用这个工具来使用git，连接git和github参考<a href="http://fangzh.top/2018/2018090514/" target="_blank" rel="noopener">http://fangzh.top/2018/2018090514/</a> ，配置过git和github的可以跳过这个步骤</p>
-<h2 id="安装nodejs"><a href="#安装nodejs" class="headerlink" title="安装nodejs"></a>安装nodejs</h2><p><a href="https://nodejs.org/en/download/" target="_blank" rel="noopener">nodejs</a>选择LTS版本就行了</p>
-<p><img src="/2019/10/24/%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA/1571900180720.png" alt="1571900180720"></p>
-<p>打开git bash，可以直接在电脑的搜索框输入git bash，启动就可以了，这个时候你所在的文件夹位置为用户文件夹；或者右击一个文件夹，点击git bash，这时候你的文件夹位置就是你打开的这个文件夹。</p>
-<p><img src="/2019/10/24/%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA/1571902265215.png" alt="1571902265215"></p>
-<p>输入</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">node -v</span><br><span class="line">npm -v</span><br></pre></td></tr></table></figure>
-
-<p>若出现</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">v12.13.0</span><br><span class="line">6.12.0</span><br></pre></td></tr></table></figure>
-
-<p>这些版本号信息，则安装成功</p>
-<h2 id="安装hexo"><a href="#安装hexo" class="headerlink" title="安装hexo"></a>安装hexo</h2><p>本来应该在git bash 下用npm命令安装，但是源文件下载太慢，所以需要下载镜像。用cnpm安装hexo</p>
-<p>还是在git bash内，安装cnpm，输入</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm install -g cnpm --registry=http://registry.npm.taobao.org</span><br></pre></td></tr></table></figure>
-
-<p>检测cnpm是否安装成功，输入</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">cnmp</span><br></pre></td></tr></table></figure>
-
-<p>如果出现了配置信息，则安装成功</p>
-<p>接下来安装hexo，输入</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">cnpm install -g hexo-cli</span><br></pre></td></tr></table></figure>
-
-<p>同样检测hexo是否安装成功，输入</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo -v</span><br></pre></td></tr></table></figure>
-
-<h2 id="初始化hexo"><a href="#初始化hexo" class="headerlink" title="初始化hexo"></a>初始化hexo</h2><p>创建一个保存博客的文件夹，这里我们用blog表示这个文件夹，右击文件夹，用git bash进入该文件夹。这个文件夹就是保存博客的位置，如果初始化出错了，可以直接删除这个文件夹。</p>
-<p>在该文件夹下初始化hexo。输入</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo init</span><br></pre></td></tr></table></figure>
-
-<p>这里初始化可能很慢，可以搭梯子。<br>初始化完成后，出现</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">Start blogging with Hexo!</span><br></pre></td></tr></table></figure>
-<p>则初始化完成</p>
-<p>接下来输入</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo s</span><br></pre></td></tr></table></figure>
-<p>打开hexo服务，出现下图内容</p>
-<p><img src="/2019/10/24/%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA/1571902875727.png" alt="1571902875727"></p>
-<p>这时候在浏览器的输入框输入</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">localhost:4000</span><br></pre></td></tr></table></figure>
-
-<p>出现以下界面</p>
-<p><img src="/2019/10/24/%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA/1571902947660.png" alt="1571902947660"></p>
-<p>至此，博客在本机已经搭建好，接下来需要将博客部署到github上，让别人也可以访问你的博客</p>
-<h2 id="新建一个github仓库"><a href="#新建一个github仓库" class="headerlink" title="新建一个github仓库"></a>新建一个github仓库</h2><p>没有github账号的注册一个，注册完登录后，在GitHub.com中看到一个New repository，博客部署的仓库名必须是以下格式</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">github用户名.github.io</span><br></pre></td></tr></table></figure>
-
-<p><img src="/2019/10/24/%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA/1571904180505.png" alt="1571904180505"></p>
-<p>输入完成后，点击create</p>
-<h2 id="安装部署插件"><a href="#安装部署插件" class="headerlink" title="安装部署插件"></a>安装部署插件</h2><p>在blog文件夹下，在git bash中输入</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">cnpm install hexo-deployer-git --save</span><br></pre></td></tr></table></figure>
-
-<h2 id="修改配置文件"><a href="#修改配置文件" class="headerlink" title="修改配置文件"></a>修改配置文件</h2><p>在blog目录下找到_config.yml，文本形式打开（这里可以用notepad），移到文件末尾。修改为</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">deploy:</span><br><span class="line">  type: git</span><br><span class="line">  repo: https://github.com/WindStormV/WindStormV.github.io.git</span><br><span class="line">  branch: master</span><br></pre></td></tr></table></figure>
-<p>这里将WindStormV替换为你的用户名即可，注意type:后面有一个空格</p>
-<p>最后输入</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">hexo clean</span><br><span class="line">hexo generate</span><br><span class="line">hexo deploy</span><br></pre></td></tr></table></figure>
-
-<p>完成</p>
-<h2 id="如何写文章"><a href="#如何写文章" class="headerlink" title="如何写文章"></a>如何写文章</h2><p>用hexo new ‘文件名’</p>
-<p>或者直接在source/_posts下创建新的.md文件</p>
-<p>markdown可以用notepad++、vs code等编写，语法参考：<a href="https://www.jianshu.com/p/191d1e21f7ed" target="_blank" rel="noopener">https://www.jianshu.com/p/191d1e21f7ed</a></p>
-<p>接下来</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">hexo clean//清除当前的public文件夹，即上传到github上的文件</span><br><span class="line">hexo generate//根据当前source文件夹的内容创建新的public文件夹</span><br><span class="line">hexo deploy//部署public文件夹的内容至github</span><br></pre></td></tr></table></figure>
-<h2 id="如何备份，或者移植电脑中的博客库"><a href="#如何备份，或者移植电脑中的博客库" class="headerlink" title="如何备份，或者移植电脑中的博客库"></a>如何备份，或者移植电脑中的博客库</h2><p><a href="https://blog.csdn.net/xr469786706/article/details/78402492" target="_blank" rel="noopener">https://blog.csdn.net/xr469786706/article/details/78402492</a></p>
-<h2 id="给博客插入图片"><a href="#给博客插入图片" class="headerlink" title="给博客插入图片"></a>给博客插入图片</h2><p><a href="https://blog.csdn.net/qq_40265501/article/details/80019774" target="_blank" rel="noopener">https://blog.csdn.net/qq_40265501/article/details/80019774</a></p>
-<p><a href="https://www.jianshu.com/p/8d28027fec76" target="_blank" rel="noopener">https://www.jianshu.com/p/8d28027fec76</a></p>
-<p>这里的npm改为 cnpm指令</p>
-<p>注意：文件路径一定要用正斜杠，虽然反斜杠markdown也识别，但是无法解析到网页上。</p>
-<p><img src="/2019/10/24/%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA/LuckyHeart.jpg" alt="LuckyHeart"></p>
-
+        
+          <p class="article-more-link">
+            <a href="/2019/10/24/%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA/#more">Read More</a>
+          </p>
+        
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/2019/10/24/%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA/" data-id="ck25ixnov00019cuhcgg07i44" class="article-share-link">Share</a>
+      <a data-url="http://yoursite.com/2019/10/24/%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA/" data-id="ck25j0m7z00012wuhcqy6benf" class="article-share-link">Share</a>
       
       
     </footer>
@@ -207,7 +142,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/2019/10/24/hello-world/" data-id="ck25ixnoo00009cuh29tm80xs" class="article-share-link">Share</a>
+      <a data-url="http://yoursite.com/2019/10/24/hello-world/" data-id="ck25j0m7t00002wuhavbhezso" class="article-share-link">Share</a>
       
       
     </footer>
