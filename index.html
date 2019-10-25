@@ -84,7 +84,7 @@
     <div class="article-entry" itemprop="articleBody">
       
         <h1 id="博客搭建：hexo-github搭建博客（windows）"><a href="#博客搭建：hexo-github搭建博客（windows）" class="headerlink" title="博客搭建：hexo+github搭建博客（windows）"></a>博客搭建：hexo+github搭建博客（windows）</h1><p>整个安装过程参考了：<a href="http://fangzh.top/2018/2018090514/" target="_blank" rel="noopener">http://fangzh.top/2018/2018090514/</a></p>
-<p>对其进行了简化和优化</p>
+<p>对其进行了简化和优化，主要是用cnpm替换了npm（npm下载太慢，可能安装失败）</p>
 <h2 id="安装git"><a href="#安装git" class="headerlink" title="安装git"></a>安装git</h2><p>到git官网上下载,<a href="https://gitforwindows.org/" target="_blank" rel="noopener">Download git</a>,下载后会有一个Git Bash的命令行工具，以后就用这个工具来使用git，连接git和github参考<a href="http://fangzh.top/2018/2018090514/" target="_blank" rel="noopener">http://fangzh.top/2018/2018090514/</a> ，配置过git和github的可以跳过这个步骤</p>
 <h2 id="安装nodejs"><a href="#安装nodejs" class="headerlink" title="安装nodejs"></a>安装nodejs</h2><p><a href="https://nodejs.org/en/download/" target="_blank" rel="noopener">nodejs</a>选择LTS版本就行了</p>
 <p><img src="/2019/10/24/%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA/1571900180720.png" alt="1571900180720"></p>
@@ -145,8 +145,9 @@
 <p>完成</p>
 <h2 id="如何写文章"><a href="#如何写文章" class="headerlink" title="如何写文章"></a>如何写文章</h2><p>用hexo new ‘文件名’</p>
 <p>或者直接在source/_posts下创建新的.md文件</p>
+<p>markdown可以用notepad++、vs code等编写，语法参考：<a href="https://www.jianshu.com/p/191d1e21f7ed" target="_blank" rel="noopener">https://www.jianshu.com/p/191d1e21f7ed</a></p>
 <p>接下来</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">hexo clean//清除之前的public，即上传到github上的文件</span><br><span class="line">hexo generate//根据当前source创建新的public</span><br><span class="line">hexo deploy//部署public至github</span><br></pre></td></tr></table></figure>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">hexo clean//清除当前的public文件夹，即上传到github上的文件</span><br><span class="line">hexo generate//根据当前source文件夹的内容创建新的public文件夹</span><br><span class="line">hexo deploy//部署public文件夹的内容至github</span><br></pre></td></tr></table></figure>
 <h2 id="如何备份，或者移植电脑中的博客库"><a href="#如何备份，或者移植电脑中的博客库" class="headerlink" title="如何备份，或者移植电脑中的博客库"></a>如何备份，或者移植电脑中的博客库</h2><p><a href="https://blog.csdn.net/xr469786706/article/details/78402492" target="_blank" rel="noopener">https://blog.csdn.net/xr469786706/article/details/78402492</a></p>
 <h2 id="给博客插入图片"><a href="#给博客插入图片" class="headerlink" title="给博客插入图片"></a>给博客插入图片</h2><p><a href="https://blog.csdn.net/qq_40265501/article/details/80019774" target="_blank" rel="noopener">https://blog.csdn.net/qq_40265501/article/details/80019774</a></p>
 <p><a href="https://www.jianshu.com/p/8d28027fec76" target="_blank" rel="noopener">https://www.jianshu.com/p/8d28027fec76</a></p>
@@ -157,7 +158,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/2019/10/24/%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA/" data-id="ck25iew3c000144uhc5bgf0vg" class="article-share-link">Share</a>
+      <a data-url="http://yoursite.com/2019/10/24/%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA/" data-id="ck25ixnov00019cuhcgg07i44" class="article-share-link">Share</a>
       
       
     </footer>
@@ -206,7 +207,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/2019/10/24/hello-world/" data-id="ck25iew2n000044uh961l2ypd" class="article-share-link">Share</a>
+      <a data-url="http://yoursite.com/2019/10/24/hello-world/" data-id="ck25ixnoo00009cuh29tm80xs" class="article-share-link">Share</a>
       
       
     </footer>
